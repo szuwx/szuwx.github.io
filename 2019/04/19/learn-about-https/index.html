@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="https://szuwx.github.io">
   <title>learn about https | 王晓的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本原则加密过程：公钥加密，只有私钥解密签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布">
+  <meta name="description" content="关于https处理流程的记录基本原则加密过程：公钥加密，只有私钥解密签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布">
 <meta name="keywords" content="technology">
 <meta property="og:type" content="article">
 <meta property="og:title" content="learn about https">
 <meta property="og:url" content="https://szuwx.github.io/2019/04/19/learn-about-https/index.html">
 <meta property="og:site_name" content="王晓的博客">
-<meta property="og:description" content="基本原则加密过程：公钥加密，只有私钥解密签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布">
+<meta property="og:description" content="关于https处理流程的记录基本原则加密过程：公钥加密，只有私钥解密签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://szuwx.github.io/2019/04/19/learn-about-https/1357117-b5d787c2aeba0470.jpg">
-<meta property="og:updated_time" content="2019-04-19T05:10:20.535Z">
+<meta property="og:updated_time" content="2019-04-19T05:13:51.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learn about https">
-<meta name="twitter:description" content="基本原则加密过程：公钥加密，只有私钥解密签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布">
+<meta name="twitter:description" content="关于https处理流程的记录基本原则加密过程：公钥加密，只有私钥解密签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布">
 <meta name="twitter:image" content="https://szuwx.github.io/2019/04/19/learn-about-https/1357117-b5d787c2aeba0470.jpg">
   
     <link rel="alternative" href="/atom.xml" title="王晓的博客" type="application/atom+xml">
@@ -183,7 +183,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>基本原则</strong><br>加密过程：公钥加密，只有私钥解密<br>签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布<br><a id="more"></a><br><strong>https流程：</strong></p>
+        <h1 id="关于https处理流程的记录"><a href="#关于https处理流程的记录" class="headerlink" title="关于https处理流程的记录"></a>关于https处理流程的记录</h1><p><strong>基本原则</strong><br>加密过程：公钥加密，只有私钥解密<br>签名过程：私钥加密明文，公钥解密为明文，公钥可以透过数字证书认证机构签授的电子证书形式公布<br><a id="more"></a><br><strong>https流程：</strong></p>
 <pre><code>1. client一般内置可信机构的CA信息以及公钥
 2. server用自己公钥去申请证书(上传公钥或者个人信息到第三方认证机构，得到证书(含公钥和私钥))，其中具体为：先通过csr工具生成两个文件，一个为CSR文件，用来向CA机构申请的文件，一般以CSR结尾，一个是KEY文件，这个文件一定要保存好，这个文件就是对应第一章节将的server端的私钥，重新生成也会变更，配置到nginx服务器，具体配置为参考下面nginx配置
 3. 发起请求时，server端回复证书，含具体的颁发机构，持有者，有效期，公钥，签名等
@@ -434,11 +434,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">technology</a>
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
+                <a href="javascript:void(0)" class="js-tag color1">technology</a>
               </li>
             
             <div class="clearfix"></div>
